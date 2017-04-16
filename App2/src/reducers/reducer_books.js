@@ -1,8 +1,8 @@
 export default function () {
   return [
-    { title: 'Book 1' },
-    { title: 'Book 2' },
-    { title: 'Book 3' },
-    { title: 'Book 4' }
+    { title: 'Javascript: The Good Parts', pages: 101 },
+    { title: 'Back To The Future', pages: 39 },
+    { title: 'The Dark Tower', pages: 85 },
+    { title: 'Eloquent Ruby', pages: 1 }
   ];
 }
