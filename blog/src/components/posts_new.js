@@ -11,13 +11,14 @@ class PostsNew extends Component {
           type="text"
           {...field.input}
         />
+        {field.meta.error}
       </div>
     );
   }
 
   render() {
     return (
-      <form action="">
+      <form>
         <Field
           label="Title For Post"
           name="title"
@@ -42,7 +43,7 @@ function validate(values) {
   let errors = {};
 
   if (!values.title) {
-    errors.title = 'Enter a title!';
+    errors.title = 'Enter a title';
   }
   if (!values.categories) {
     errors.categories = 'Enter some categories';
